@@ -21,7 +21,7 @@ const Sidebar = () => {
   return (
     <>
       <button
-        className="fixed top-0 left-0 z-40 text-white m-2"
+        className="fixed top-0 left-0 z-40 text-white m-2 bg-sky-700 p-3 rounded-lg hover:bg-sky-900 hover:text-white"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? "X" : "Menu"}
