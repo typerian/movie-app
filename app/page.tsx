@@ -28,19 +28,24 @@ export default function Home() {
 
   return (
     <div className="bg-gray-900 text-white min-h-screen">
-      <main className="flex flex-col items-center justify-center min-h-screen py-2">
-        <h1 className="text-6xl font-bold m-4">Explorador de películas</h1>
-        <form onSubmit={handleSearch} className="mt-8">
+      <main className="flex flex-col items-center justify-center py-2 h-screen">
+        <h1 className="text-6xl font-bold m-4 text-center">
+          Explorar de películas
+        </h1>
+        <form
+          onSubmit={handleSearch}
+          className="mt-8 grid grid-cols-4 md:grid-rows-1 grid-rows-2"
+        >
           <input
             type="text"
-            className="px-4 py-2 w-80 text-gray-900"
+            className="py-2 sm:w-96 px-2 w-full text-gray-900 md:col-span-3 col-span-4 text-center"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="buscar por nombre de pelicula..."
+            placeholder="Buscar por nombre de pelicula..."
           />
           <button
             type="submit"
-            className="ml-2 px-4 py-2 bg-blue-500 text-white rounded"
+            className=" py-2 bg-blue-500 text-white rounded md:col-span-1 col-span-4"
           >
             Buscar
           </button>
