@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       <main className="flex flex-col items-center justify-center min-h-screen py-2">
-        <h1 className="text-6xl font-bold m-4">Explorar de películas</h1>
+        <h1 className="text-6xl font-bold m-4">Explorador de películas</h1>
         <form onSubmit={handleSearch} className="mt-8">
           <input
             type="text"
